@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{   
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.main-content{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+
+.navbar{
+    width: 90%;
+    margin-top: 1rem;
+    font-family: Dm sans;
+    margin-left: auto;
+    margin-right: auto;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 50px;
+    backdrop-filter: blur(40px);
+    box-shadow: rgba(119, 119, 119, 0.6) 0px 0px 14px 0px;
+    
+   
+}
+
+.nav-logo{
+    /* height: 100%; */
+     height: 100%;
+    color : black;
+    font-weight: 400;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    /* padding : 0.5rem 1.3rem; */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer ;
+
+}
+.nav-logo a{
+    font-family: Dm sans;
+    font-weight: 800;
+    font-size: 2rem;
+}
+.nav-logo-img{
+    height: 100%;
+}
+.nav-links{
+    display: flex;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding : 0.5rem 1.3rem;
+    border: none;
+    border-radius: 4px;
+    
+}
+.nav-links .git{
+    padding : 0.5rem 1.3rem;
+    margin-right: 1.2rem;
+    border-radius: 4px;
+    cursor: pointer ;
+    transition: 0.25s  background-color , color ease-in;
+
+}
+.nav-links .git:hover{
+    color: white;
+    background-color: black;
+}
+
+.nav-links .twitter{
+   /* background-color: blue; */
+   padding : 0.5rem 1.3rem;
+   margin-right: 1.2rem;
+   border-radius: 4px;
+   cursor: pointer ;
+   transition: 0.25s background-color , color ease-in;
+}
+.nav-links .twitter:hover{
+    color: white;
+    background-color: black;
+}
+.nav-links .about{
+    /* background-color: blue; */
+    padding : 0.5rem 1.3rem;
+    border-radius: 4px;
+    cursor: pointer ;
+    transition: 0.25s background-color , color ease-in;
+}
+.nav-links .about:hover{
+    color: white;
+    background-color: black;   
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+.nav-logo-weather{
+    text-decoration: none;
+    color: black;
+}
+
+.temperature-box{
+    position: absolute;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    height: 14rem;
+    width: 75%;
+    top: 8rem;
+    left: 50%;
+    border: none;
+    border-radius: 8px;
+    transform: translateX(-50%);
+    backdrop-filter: blur(3px);
+    padding-top: 1rem;
+    box-shadow: rgba(119, 119, 119, 0.6) 0px 0px 14px 0px;
+}
+.temperature-box-location{
+    height: 1.6rem;
+    /* background-color: aqua; */
+    padding-left: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+.temperature-box-location-country{
+    
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500 ;
+    padding-left: 0.4rem;
+}
+.custom-location{
+    font-size: 1.6rem;
+    color: white;
+}
+.temperature-box-value{
+    height: 8.5rem;
+    font-family: "Inter";
+    display: flex;
+    font-size: 7.9rem ;
+    padding-left: 1.2rem;
+}
+.temperature-box-value-num{
+    display: inline-block;
+    max-height: 8.5rem;
+}
+.temperature-box-value-num-unit{
+    display: inline-block;
+    height:4.2rem ;
+    max-height: 4.2rem;
+    font-size: 4.2rem;
+}
+.body1{
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+}
+.temperature-box-min-max{
+    display: inline-block;
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+ 
+    border-radius: 50px;
+    margin-left: 1.2rem;
+    
+
+    /* background-color: red; */
+
+}
+.temperature-box-min{
+    /* width: 2rem; */
+    margin-right: 1rem;
+    margin-left: 1.2rem;
+    
+}
+
+.weather-description{
+    position: absolute;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    height: 8rem;
+    width: 75%;
+    top: 24rem;
+    left: 50%;
+    border: none;
+    border-radius: 8px;
+    transform: translateX(-50%);
+    backdrop-filter: blur(3px);
+    box-shadow: rgba(119, 119, 119, 0.6) 0px 0px 14px 0px;
+    font-family:"SUSE" , Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    
+    
+    padding-left: 1.2rem;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+
+
